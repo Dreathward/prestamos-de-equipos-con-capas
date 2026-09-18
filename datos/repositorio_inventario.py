@@ -1,5 +1,5 @@
 class RepositorioInventario:
-    def init(self):
+    def __init__(self):
         # Inventario inicial según los datos mínimos requeridos
         self.inventario = {
             "Portátiles": 2,
@@ -22,6 +22,6 @@ class RepositorioInventario:
             "cantidad": cantidad,
             "estado": estado
         })
-
+        
     def obtener_solicitudes(self):
         return self.solicitudes
