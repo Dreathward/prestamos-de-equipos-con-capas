@@ -1,6 +1,6 @@
 class Consola:
-    def init(self, servicio):
-        # Inyección de la dependencia de la capa inferior (Aplicación)
+    def __init__(self, servicio):
+        # Inyección de la dependencia de la capa de aplicación
         self.servicio = servicio
 
     def mostrar_inventario(self):
