@@ -3,16 +3,16 @@ from aplicacion.servicio_prestamos import ServicioPrestamos
 from presentacion.consola import Consola
 
 def main():
-    # 1. Se crea la capa de datos
+    # Se crea la capa de datos
     repositorio = RepositorioInventario()
 
-    # 2. Se crea la capa de aplicación inyectandole los datos
+    # Se crea la capa de aplicación inyectandole los datos
     servicio = ServicioPrestamos(repositorio)
 
-    # 3. Se crea la capa de presentación inyectándole la de aplicación
+    # Se crea la capa de presentación inyectándole la de aplicación
     consola = Consola(servicio)
 
-    # 4. Ejecución del programa
+    # Ejecución del programa
     print("Iniciando Sistema de Préstamos - Equipo 1 (Arquitectura en Capas)")
     consola.ejecutar_casos_de_prueba()
 
