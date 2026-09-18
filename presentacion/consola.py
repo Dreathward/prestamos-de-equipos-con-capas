@@ -5,22 +5,22 @@ class Consola:
 
     def mostrar_inventario(self):
         inventario = self.servicio.obtener_estado_inventario()
-        print("\n--- ESTADO DEL INVENTARIO ---")
+        print("\nESTADO DEL INVENTARIO:")
         for equipo, cantidad in inventario.items():
-            print(f"- {equipo}: {cantidad} disponibles")
+            print(f"- {equipo}: {cantidad}")
 
     def procesar_entrada(self, estudiante, equipo, cantidad):
-        print(f"\n[!] Nueva Solicitud: {estudiante} solicita {cantidad} {equipo}.")
+        print(f"\nNUEVA SOLICITUD: {estudiante} solicita {cantidad} {equipo}.")
         resultado = self.servicio.procesar_solicitud(estudiante, equipo, cantidad)
-        print(f">>> Resultado de la solicitud: {resultado}")
+        print(f"Resultado: {resultado}")
 
     def mostrar_reporte_final(self):
         print("\n" + "="*30)
-        print("REPORTE FINAL EJECUTADO")
+        print("REPORTE FINAL")
         print("="*30)
         self.mostrar_inventario()
 
-        print("\n--- SOLICITUDES PROCESADAS ---")
+        print("\nSOLICITUDES PROCESADAS:")
         solicitudes = self.servicio.obtener_historial_solicitudes()
         for s in solicitudes:
             print(f"- Estudiante: {s['estudiante']} | Equipo: {s['cantidad']} {s['equipo']} | Estado: {s['estado']}")

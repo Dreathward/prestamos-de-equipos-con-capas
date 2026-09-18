@@ -13,7 +13,7 @@ def main():
     consola = Consola(servicio)
 
     # Ejecución del programa
-    print("Iniciando Sistema de Préstamos - Equipo 1 (Arquitectura en Capas)")
+    print("Sistema de Préstamos - Equipo 1 (Arquitectura en Capas)")
     consola.ejecutar_casos_de_prueba()
 
 if __name__ == "__main__":
