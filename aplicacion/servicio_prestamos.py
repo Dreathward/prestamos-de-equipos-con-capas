@@ -1,12 +1,12 @@
 class ServicioPrestamos:
-    def init(self, repositorio):
-        # Inyección de la dependencia de la capa inferior (Datos)
+    def __init__(self, repositorio):
+        # Inyección de la dependencia de la capa de datos
         self.repositorio = repositorio
 
     def procesar_solicitud(self, estudiante, equipo, cantidad):
         inventario = self.repositorio.obtener_inventario()
 
-        # Regla de negocio: Verificar si hay disponibilidad
+        # Verificar si hay disponibilidad
         if equipo in inventario and inventario[equipo] >= cantidad:
             self.repositorio.actualizar_inventario(equipo, cantidad)
             estado = "Aprobada"
