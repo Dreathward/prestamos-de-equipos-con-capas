@@ -12,7 +12,7 @@ graph TD
         Dat["<b>Capa de Datos</b><br>repositorio_inventario.py<br><i>Almacenamiento en memoria</i>"]
     end
 
-    style Main fill:#f9f9f9,stroke:#333,stroke-width:2px
-    style Pres fill:#d4edda,stroke:#28a745,stroke-width:2px
-    style App fill:#cce5ff,stroke:#007bff,stroke-width:2px
-    style Dat fill:#fff3cd,stroke:#ffc107,stroke-width:2px
+    style Main fill:#f9f9f9,stroke:#333,stroke-width:2px,color:#000000
+    style Pres fill:#d4edda,stroke:#28a745,stroke-width:2px,color:#000000
+    style App fill:#cce5ff,stroke:#007bff,stroke-width:2px,color:#000000
+    style Dat fill:#fff3cd,stroke:#ffc107,stroke-width:2px,color:#000000
